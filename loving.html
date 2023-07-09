@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create your account</title>
+    <link rel="stylesheet" href="loving.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fa fa-bars"></i>
+        </label>
+        <h1>GoHookup - Find a Hookup Fast And Easy</h1>
+        <img src="love35.jpg">
+        <img src="love35.jpg">
+        </nav>
+    <div class="formbox">
+        <p style="color:rgba(0, 17, 255, 0.907);font-weight: 600; font-size: 20px;">Create Your account</p>
+        <form onsubmit="return validatepassword()">
+            
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password"  id="password" class="form1" required><br>
+            <label>Confirm password</label>
+            <input type="password" placeholder="Confirm your password" id="confirmpassword" class="form1" required><br>
+            <input type="submit" value="Submit" >     
+        </form>
+        <p class="para-1">Already have an account?<a href="love.html" style="color:red;">Login here</a></p>
+    </div>
+    
+    <script>
+    function validatepassword(){
+      var password;
+      document.getElementById('password').value;
+      var confirmpassword;
+      document.getElementById('confirmpassword').value;
+      if(password!=confirmpassword){
+        window.alert('Password missmatch');
+      }
+    }
+    </script> 
+</body>
+</html>
